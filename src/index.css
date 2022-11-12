@@ -1,3 +1,9 @@
+html {
+  font-size: 10px;
+  font-family: 'Open Sans';
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,281 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  display: flex;
+  min-height: 900px;
+  justify-content: right;
+}
+
+@media (max-width: 815px) {
+  .container {
+    flex-direction: column;
+    min-height: 1360px;
+    align-items: center;
+    row-gap: 70px;
+  }
+}
+
+@media (max-width: 399px) {
+  .container {
+    height: 1008px;
+  }
+}
+
+.left-window {
+  width: 49.125%;
+  padding: 2.875% 0 0 2.875%;
+  min-height: 900px;
+}
+
+@media (max-width: 815px) {
+  .left-window {
+    width: 100%;
+  }
+}
+
+@media (max-width: 399px) {
+  .left-window {
+    height: 807px;
+  }
+}
+
+.logo {
+  margin: 0 0 119px 0;
+}
+
+@media (max-width: 815px) {
+  .logo {
+    margin: 0 0 279px 0;
+  }
+}
+
+.form {
+  width: 69%;
+}
+
+@media (max-width: 815px) {
+  .form {
+    width: 66%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 399px) {
+  .form {
+    width: 90%;
+  }
+}
+
+.form-title {
+  width: 92%;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 95%;
+  color: #181C47;
+  margin: 0 0 18px 0;
+}
+
+@media (max-width: 1146px) {
+  .form-title {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1054px) {
+  .form-title {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 455px) {
+  .form-title {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 384px) {
+  .form-title {
+    font-size: 2.5rem;
+  }
+}
+
+.form-description {
+  width: 92%;
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 136%;
+  color: #181C47;
+  margin: 0 0 34px 0;
+}
+
+@media (max-width: 399px) {
+  .form-description {
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+  }
+}
+
+.form-field {
+  width: 92%;
+  min-height: 118px;
+  margin: 0 0 22px 0;
+}
+
+@media (max-width: 399px) {
+  .form-field {
+    width: 100%;
+    height: 80px;
+  }
+}
+
+.field-name {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 120%;
+  color: #241C15;
+  margin: 0 0 10px 0;
+}
+
+input[type=text] {
+  width: 100%;
+  height: 46px;
+  font-size: 2rem; 
+  margin: 0 0 6px 0;
+}
+
+.invalid-input {
+  border: none;
+  outline: 1px solid #F95847
+}
+
+.invalid-message {
+  width: 100%;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 129%;
+  color: #F95847; 
+}
+
+.agreement {
+  min-height: 76px;
+  margin: 0 0 32px 0;
+}
+
+#agreement-checkbox {
+  cursor: pointer;
+}
+
+.agreement-description {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 157%;
+}
+
+.submit {
+  width: 92%;
+  height: 50px;
+  background-color: #FE9235;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.video-container {
+  width: 50.875%;
+  height: 900px;
+  background-color: #FEE9E7;
+  box-sizing: border-box;
+  position: relative;
+}
+
+@media (max-width: 815px) {
+  .video-container {
+    width: 100%;
+    height: 450px;
+  }
+}
+
+.video-image {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.title {
+  width: 36.5%;
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 5.4rem;
+  line-height: 117%;
+  position: absolute;
+  top: 18%;
+  right: 5%;
+  z-index: 1;
+}
+
+@media (max-width: 1258px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 933px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 815px) {
+  .title {
+    width: 65%;
+    font-size: 5rem;
+    line-height: 117%;
+    top: 20%;
+    left: 18%;
+    right: unset;
+  }
+}
+
+@media (max-width: 654px) {
+  .title {
+    font-size: 4.5rem;
+    line-height: 117%;
+  }
+}
+
+@media (max-width: 588px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 523px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 458px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 392px) {
+  .title {
+    left: 15%;
+    width: 90%;
+    font-size: 2.9rem;
+  }
 }
