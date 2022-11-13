@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.33a1d8ef.css",
-    "main.js": "/static/js/main.d8337f2f.js",
-    "static/media/video-image.png": "/static/media/video-image.a9e580ca327cc887beee.png",
-    "index.html": "/index.html",
-    "main.33a1d8ef.css.map": "/static/css/main.33a1d8ef.css.map",
-    "main.d8337f2f.js.map": "/static/js/main.d8337f2f.js.map"
+    "main.css": "/avs-registration-form/static/css/main.33a1d8ef.css",
+    "main.js": "/avs-registration-form/static/js/main.e86d15fa.js",
+    "static/media/video-image.png": "/avs-registration-form/static/media/video-image.a9e580ca327cc887beee.png",
+    "index.html": "/avs-registration-form/index.html",
+    "main.33a1d8ef.css.map": "/avs-registration-form/static/css/main.33a1d8ef.css.map",
+    "main.e86d15fa.js.map": "/avs-registration-form/static/js/main.e86d15fa.js.map"
   },
   "entrypoints": [
     "static/css/main.33a1d8ef.css",
-    "static/js/main.d8337f2f.js"
+    "static/js/main.e86d15fa.js"
   ]
 }
